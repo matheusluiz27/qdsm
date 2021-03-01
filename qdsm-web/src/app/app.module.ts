@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import {MatDialogModule} from '@angular/material/dialog';
 import { QuizComponent } from './quiz/quiz.component';
 import { HeaderComponent } from './header/header.component';
+import { PatientRecordComponent } from './patient-record/patient-record.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     QuizComponent,
-    HeaderComponent
+    HeaderComponent,
+    PatientRecordComponent
   ],
   imports: [
     BrowserModule,
