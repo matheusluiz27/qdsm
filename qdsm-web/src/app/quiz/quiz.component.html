@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h3>Questão 1</h3>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <p>
+                {{questions[questionIdToDisplay].question}}
+            </p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <button type="button" class="btn btn-light" (click)="setAnswer(1, questionIdToDisplay)">1</button>
+            <button type="button" class="btn btn-light" (click)="setAnswer(2, questionIdToDisplay)">2</button>
+            <button type="button" class="btn btn-light" (click)="setAnswer(3, questionIdToDisplay)">3</button>
+            <button type="button" class="btn btn-light" (click)="setAnswer(4, questionIdToDisplay)">4</button>
+            <button type="button" class="btn btn-light" (click)="setAnswer(5, questionIdToDisplay)">5</button>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <button type="button" class="btn btn-light"
+            (click)="backQuestion()">Anterior</button>
+        </div>
+        <div class="col-md-6">
+            <button type="button" class="btn btn-light"
+            (click)="nextQuestion()">Próximo</button>
+        </div>
+    </div>
+</div>
