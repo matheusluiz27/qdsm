@@ -1,0 +1,13 @@
+.wrapper-header {
+    background-color: #2E9AFE;
+    color: white;
+    padding: 1em;
+}
+
+.menu-header li  {
+    display: block;
+    float: right;
+    font-size: 18px;
+    padding-right: 10px;
+    margin: 10px;
+}
