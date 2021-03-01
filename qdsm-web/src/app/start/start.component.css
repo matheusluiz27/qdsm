@@ -1,0 +1,30 @@
+.wrapper-start  {
+    padding: 3em;
+    color: #2E9AFE;
+    
+}
+
+p {
+    display: block;
+    font-size: xx-large;
+    text-align: center;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.start-button {
+    height: 70px;
+    border-radius: 15px;
+    margin-top: 2em;
+    border-color: #2E9AFE;
+    color: #2E9AFE;
+}
+
+.start-button:hover {
+    background-color: #2E9AFE;
+    color: white;
+}
