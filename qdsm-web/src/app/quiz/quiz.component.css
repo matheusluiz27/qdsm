@@ -1,0 +1,47 @@
+.wrapper-quiz  {
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+p { 
+    padding: 50px;
+    text-align: center;
+    font-size: xx-large;
+}
+
+.answer-option {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #2E9AFE;
+    font-size: xx-large;
+}
+
+.answer-option:hover {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #FFF;
+    background-color: #2E9AFE;
+    font-size: xx-large;
+}
+
+.answer-dimension {
+    text-align: center;
+    color: #2E9AFE;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-style {
+    border-radius: 15px;
+    border-width: 1px;
+    color: #2E9AFE;
+    box-shadow: 5px 10px 18px #888888;
+}
+
+.button-change-question {
+    color: #2E9AFE;
+}

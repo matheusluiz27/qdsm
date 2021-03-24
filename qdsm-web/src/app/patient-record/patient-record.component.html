@@ -1,107 +1,57 @@
-<div>
-    <div class="container">
+<div class="container wraper-patient-record">
+    <div class="card-body card-style">
         <div class="row">
             <div class="col-md-12">
-                <h3>Cadastro de pacient</h3>
+                <h3>Informações do paciente</h3>
             </div>
         </div>
-        <form class="row">
-            <div class="col-md-6">
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Nome do paciente:</label>
-                    <input type="text" class="form-control">
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Sexo:</label>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
-                            value="option1">
-                        <label class="form-check-label" for="exampleRadios1">
-                            Fem
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
-                            value="option2">
-                        <label class="form-check-label" for="exampleRadios2">
-                            Masc
-                        </label>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Código:</label>
-                    <input type="text" class="form-control">
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Idade:</label>
-                    <input type="number" class="form-control">
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputEmail1">CPF:</label>
-                    <input type="number" class="form-control">
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Hipótese diagnóstica:</label>
-                    <input type="text" class="form-control">
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Tempo de diagnóstico:</label>
-                    <input type="text" class="form-control">
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Crise convulsiva:</label>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
-                            value="option1">
-                        <label class="form-check-label" for="exampleRadios1">
-                            Sim
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
-                            value="option2">
-                        <label class="form-check-label" for="exampleRadios2">
-                            Não
-                        </label>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Implante metálico na cabeça :</label>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
-                            value="option1">
-                        <label class="form-check-label" for="exampleRadios1">
-                            Sim
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
-                            value="option2">
-                        <label class="form-check-label" for="exampleRadios2">
-                            Não
-                        </label>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Implante metálico na cabeça :</label>
-                    <input type="text" class="form-control">
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Realiza alguma terapia/tratamento? Qual(is)?:</label>
-                    <input type="text" class="form-control">
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Queixa principal:</label>
-                    <input type="text" class="form-control">
-                </div>
-            </div>
+        <form class="row form-style-7">
+            <ul>
+                <li>
+                    <label for="name">Name</label>
+                    <input type="text" name="name" maxlength="100">
+                </li>
+                <li>
+                    <label for="email">Sexo</label>
+                    <input type="text" name="email" maxlength="100">
+                </li>
+                <li>
+                    <label for="url">Código</label>
+                    <input type="text" name="url" maxlength="100">
+                </li>
+                <li>
+                    <label for="bio">Idade</label>
+                    <input type="text" name="url" maxlength="100">
+                </li>
+                <li>
+                    <label for="bio">CPF</label>
+                    <input type="text" name="url" maxlength="100">
+                </li>
+                <li>
+                    <label for="bio">Hipótese diagnóstica</label>
+                    <input type="text" name="url" maxlength="100">
+                </li>
+                <li>
+                    <label for="bio">Tempo de diagnóstico</label>
+                    <input type="text" name="url" maxlength="100">
+                </li>
+                <li>
+                    <label for="bio">Implante metálico na cabeça</label>
+                    <input type="text" name="url" maxlength="100">
+                </li>
+                <li>
+                    <label for="bio">Realiza alguma terapia/tratamento? Qual(is)?</label>
+                    <input type="text" name="url" maxlength="100">
+                </li>
+                <li>
+                    <label for="bio">Queixa principal</label>
+                    <input type="text" name="url" maxlength="100">
+                </li>
+                <li>
+                    <button type="button" class="btn btn-primary go-to-quiz-button" (click)="goToQuiz()">Ir para
+                        questionário</button>
+                </li>
+            </ul>
         </form>
-        <div class="row">
-            <div class="col-md-12">
-                <button type="button" class="btn btn-primary go-to-quiz-button">Ir para questionário</button>
-            </div>
-        </div>
     </div>
 </div>
