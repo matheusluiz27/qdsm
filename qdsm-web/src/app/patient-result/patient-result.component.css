@@ -1,0 +1,21 @@
+.wraper-patient-result {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.export-button {
+    float: right;
+}
+
+.card-style {
+    border-radius: 15px;
+    border-color: #1d5f9c;
+    border-width: 1px;
+    color: #2E9AFE;
+    box-shadow: 5px 10px 18px #888888;
+    padding: 35px;
+}
+
+.card-head {
+    margin-bottom: 20px; 
+}
