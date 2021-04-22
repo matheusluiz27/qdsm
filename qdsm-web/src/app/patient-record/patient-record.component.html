@@ -9,43 +9,43 @@
             <ul>
                 <li>
                     <label for="name">Name</label>
-                    <input type="text" name="name" maxlength="100">
+                    <input type="text" name="name" maxlength="100" [(ngModel)]="patient.nome">
                 </li>
                 <li>
                     <label for="email">Sexo</label>
-                    <input type="text" name="email" maxlength="100">
+                    <input type="text" name="email" maxlength="100" [(ngModel)]="patient.sexo">
                 </li>
                 <li>
                     <label for="url">Código</label>
-                    <input type="text" name="url" maxlength="100">
+                    <input type="text" name="url" maxlength="100" [(ngModel)]="patient.cod">
                 </li>
                 <li>
                     <label for="bio">Idade</label>
-                    <input type="text" name="url" maxlength="100">
+                    <input type="text" name="url" maxlength="100" [(ngModel)]="patient.idade">
                 </li>
                 <li>
                     <label for="bio">CPF</label>
-                    <input type="text" name="url" maxlength="100">
+                    <input type="text" name="url" maxlength="100" [(ngModel)]="patient.cpf">
                 </li>
                 <li>
                     <label for="bio">Hipótese diagnóstica</label>
-                    <input type="text" name="url" maxlength="100">
+                    <input type="text" name="url" maxlength="100" [(ngModel)]="patient.hipoteseDiagnostica">
                 </li>
                 <li>
                     <label for="bio">Tempo de diagnóstico</label>
-                    <input type="text" name="url" maxlength="100">
+                    <input type="text" name="url" maxlength="100" [(ngModel)]="patient.tempoDiagnostico">
                 </li>
                 <li>
                     <label for="bio">Implante metálico na cabeça</label>
-                    <input type="text" name="url" maxlength="100">
+                    <input type="text" name="url" maxlength="100" [(ngModel)]="patient.implanteMetalicoCabeca">
                 </li>
                 <li>
                     <label for="bio">Realiza alguma terapia/tratamento? Qual(is)?</label>
-                    <input type="text" name="url" maxlength="100">
+                    <input type="text" name="url" maxlength="100" [(ngModel)]="patient.realizaTerapias">
                 </li>
                 <li>
                     <label for="bio">Queixa principal</label>
-                    <input type="text" name="url" maxlength="100">
+                    <input type="text" name="url" maxlength="100" [(ngModel)]="patient.queixaPrincipal">
                 </li>
                 <li>
                     <button type="button" class="btn btn-primary go-to-quiz-button" (click)="goToQuiz()">Ir para
