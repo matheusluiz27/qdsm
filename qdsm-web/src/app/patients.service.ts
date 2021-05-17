@@ -9,7 +9,12 @@ export class PatientsService {
 
   constructor(localStorage: LocalStorageService) { }
 
-  addPatient (patient: any) {debugger
+  updatePatients(patients: any) {
+    localStorage.clear()
+    localStorage.setItem('patients', JSON.stringify(patients))
+  }
+
+  addPatient (patient: any) {
     let patientsInCacheString = localStorage.getItem('patients')
     let patientsInCache = JSON.parse(patientsInCacheString || '{}')
     if (patientsInCacheString == null) {
@@ -21,6 +26,8 @@ export class PatientsService {
   }
 
   listPatients () {
-
+    let patientsInCacheString = localStorage.getItem('patients')
+    let patientsInCache = JSON.parse(patientsInCacheString || '{}')
+    return patientsInCache
   } 
 }

@@ -1,18 +1,19 @@
-<div class="wrapper-start">
+<div class="wrapper-start container">
     <div class="row">
         <div class="col-md-6">
-            <button type="button" class="btn btn-outline-primary btn-md start-button"
-            (click)="goToPatientRecord()">Exportar resultados</button>
+            <h2>Questionarios</h2>
         </div>
         <div class="col-md-6">
-            <button type="button" class="btn btn-outline-primary btn-md start-button"
-            (click)="goToPatientRecord()">Iniciar questionário</button>
+            <button type="button" class="btn btn-outline-primary btn-md" style="float: right; margin-left: 5px;"
+            (click)="exportToExcel()">Exportar resultados</button>
+            <button type="button" class="btn btn-outline-primary btn-md" style="float: right;"
+            (click)="goToPatientRecord()">Novo questionario</button>
         </div>
     </div>
-    <div class="row">
-        Pacientes
-        <di>
-        
-        </di>
+    
+    <div style="margin-top: 50px;" >
+        <div class="row card-style" *ngFor="let patient of patients">
+            <div class ="col-md-6">Paciente: {{patient['nome']}}</div>
+        </div>
     </div>
 </div>

@@ -24,6 +24,14 @@ p {
     font-size: xx-large;
 }
 
+.answer-option:focus {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #FFF;
+    background-color: #2E9AFE;
+    font-size: xx-large;
+}
+
 .answer-dimension {
     text-align: center;
     color: #2E9AFE;

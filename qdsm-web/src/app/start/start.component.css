@@ -28,3 +28,12 @@ p {
     background-color: #2E9AFE;
     color: white;
 }
+
+.card-style {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border-width: 1px;
+    color: #2E9AFE;
+    box-shadow: 5px 5px 18px #888888;
+}

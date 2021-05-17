@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
-import {LocalStorageService} from 'src/app/local-storage.service'
 import { PatientsService } from '../patients.service';
 
 @Component({
@@ -17,16 +16,16 @@ export class PatientRecordComponent implements OnInit {
   }
 
   patient: any = {
-    nome: "oi",
-    sexo: "oi",
-    cod: 123123,
-    idade: 12,
-    cpf: 12312312,
-    hipoteseDiagnostica: "sdasdv asdfA",
-    tempoDiagnostico: "ASDVSsv",
-    implanteMetalicoCabeca: "asdvsa asdfa",
-    realizaTerapias: "asdlkjl lkjlkj",
-    queixaPrincipal: "asdnkj lknlaskdf"
+    nome: "",
+    sexo: "",
+    cod: "",
+    idade: "",
+    cpf: "",
+    hipoteseDiagnostica: "",
+    tempoDiagnostico: "",
+    implanteMetalicoCabeca: "",
+    realizaTerapias: "",
+    queixaPrincipal: ""
   } 
 
   goToQuiz() {

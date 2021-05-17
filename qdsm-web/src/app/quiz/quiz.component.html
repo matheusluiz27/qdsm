@@ -40,8 +40,11 @@
                 <div class="col-md-6 center">
                     <button type="button" class="btn btn-light button-change-question" (click)="backQuestion()">Anterior</button>
                 </div>
-                <div class="col-md-6 center">
+                <div class="col-md-6 center" *ngIf="questions.length -1 > questionIdToDisplay">
                     <button type="button" class="btn btn-light button-change-question" (click)="nextQuestion()">Próximo</button>
+                </div>
+                <div class="col-md-6 center" *ngIf="questions.length -1 == questionIdToDisplay">
+                    <button type="button" class="btn btn-light button-change-question" (click)="endQuiz()">Finalizar Questionario</button>
                 </div>
             </div>
         </div>

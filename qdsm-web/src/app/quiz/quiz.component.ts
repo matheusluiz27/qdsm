@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+
+import { PatientsService } from '../patients.service';
 
 @Component({
   selector: 'app-quiz',
@@ -7,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class QuizComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router, private patientsService: PatientsService) { }
 
   ngOnInit(): void {
   }
@@ -25,6 +28,15 @@ export class QuizComponent implements OnInit {
   setAnswer(answer: number, id: number) {
     this.questions[id].answer = answer
     console.log(this.questions)
+  }
+
+  endQuiz(){debugger
+    let patients = this.patientsService.listPatients()
+    let patient = patients[patients.length - 1]
+    patient["quiz"] = this.questions
+    patients[patients.length - 1] = patient
+    this.patientsService.updatePatients(patients)
+    this.router.navigate(['/']);
   }
 
   questions = [
