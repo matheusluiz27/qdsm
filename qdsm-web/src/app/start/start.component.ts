@@ -39,8 +39,10 @@ export class StartComponent implements OnInit {
     let dataToExport: any[] = []
     this.patients.forEach(p => {debugger
       let data = {nome: p['nome'], sexo: p['sexo'], cod: p['cod'], idade: p['idade'], cpf: p['cpf'], hipoteseDiagnostica: p['hipoteseDiagnostica'], tempoDiagnostico: p['tempoDiagnostico'], implanteMetalicoCabeca: p['implanteMetalicoCabeca'], realizaTerapias: p['realizaTerapias'], queixaPrincipal: p['queixaPrincipal']}
-      for(let i = 0; i < 27; i++) {
-        data[p["quiz"][i]["question"]] = p["quiz"][i]["answer"] 
+      for(let i = 0; i < 26; i++) {
+        if(p["quiz"] != undefined) {
+          data[p["quiz"][i]["question"]] = p["quiz"][i]["answer"] 
+        }
       }
       dataToExport.push(data)
     })
