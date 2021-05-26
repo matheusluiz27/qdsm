@@ -22,7 +22,19 @@
             </div>
 
             <div class="row">
-                <div class="col-md-12 center">
+                <div class="col-md-12 center" *ngIf="isLaughEmojiFirst(questionIdToDisplay)">
+                    <button type="button" class="btn btn-light answer-option"
+                        (click)="setAnswer(1, questionIdToDisplay)"><i class="far fa-laugh"></i></button>
+                    <button type="button" class="btn btn-light answer-option"
+                        (click)="setAnswer(2, questionIdToDisplay)"><i class="far fa-smile"></i></button>
+                    <button type="button" class="btn btn-light answer-option"
+                        (click)="setAnswer(3, questionIdToDisplay)"><i class="far fa-meh"></i></button>
+                    <button type="button" class="btn btn-light answer-option"
+                        (click)="setAnswer(4, questionIdToDisplay)"><i class="far fa-frown"></i></button>
+                    <button type="button" class="btn btn-light answer-option"
+                        (click)="setAnswer(5, questionIdToDisplay)"><i class="far fa-tired"></i></button>
+                </div>
+                <div class="col-md-12 center" *ngIf="!isLaughEmojiFirst(questionIdToDisplay)">
                     <button type="button" class="btn btn-light answer-option"
                         (click)="setAnswer(1, questionIdToDisplay)"><i class="far fa-tired"></i></button>
                     <button type="button" class="btn btn-light answer-option"
@@ -37,6 +49,17 @@
             </div>
 
             <div class="row">
+                <div class="col-md-6 center">
+                    Nem um pouco
+                </div>
+                <div class="col-md-6 center">
+                    Extremamente
+                </div>
+            </div>
+
+            <div class="row">
+                <br>
+                <br>
                 <div class="col-md-6 center">
                     <button type="button" class="btn btn-light button-change-question" (click)="backQuestion()">Anterior</button>
                 </div>
